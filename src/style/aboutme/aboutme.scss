@@ -1,0 +1,139 @@
+@import '../mixins';
+
+.aboutme_container{
+    @include width_1400;
+
+    .aboutme{
+        @include code_font_style;
+        &::after{
+            content: '🙋🏻‍♀️';
+        }
+    }
+    .aboutme_content{
+        position: relative;
+        .text{
+            position: absolute;
+            top: 34%; left: 0;
+            color: $fontgray;
+            >p{
+                margin-bottom: 10px;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+//img
+.photocard_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "a . b ."
+        ". . . c"
+        ". d . .";
+    gap: 20px;
+    
+    .photo_card { position: relative; }
+    .photo_card.astronaut { grid-area: a; margin-top: 20px; }
+    .photo_card.beach { grid-area: b; margin-top: 20px; }
+    .photo_card.typing { grid-area: c; }
+    .photo_card.sun-glitter { grid-area: d; margin-top: 32px; }
+
+    .photo_layout{
+        width: 335px;
+        height: 224px;
+        overflow: hidden;
+        border-radius: 20px;
+        margin: 15px 0 47px 0;
+        img.astronaut, img.typing{
+            @include img_layout;
+            object-position: 0% 0%;
+        }
+        img.beach, img.sun-glitter{
+            @include img_layout;
+            object-position: cover;
+        }
+    }
+
+    .text_layout {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .speechBubble{
+            white-space: pre-line;
+            padding: 20px 16px;
+            border-radius: 20px;
+        }
+    }
+
+    // 우주인 말풍선
+    .text_layout.astronaut{
+        top: -3.7%;
+        right: -121.7%;
+        transform: translate(-50%, -50%);
+    }
+
+    // 해변 말풍선
+    .text_layout.beach{
+        top: -4%;
+        right: -164%;
+        transform: translate(-50%, -50%);
+    }
+
+    // 타이핑 말풍선
+    .text_layout.typing{
+        flex-direction: row-reverse;
+        align-items: end;
+        top: -15.9%;
+        right: -37.4%;
+        transform: translate(-50%, -50%);
+    }
+
+    // 윤슬 말풍선
+    .text_layout.sun-glitter{
+        top: -3.5%;
+        right: -169%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.photo_card.astronaut .photo_layout {
+    cursor: url('../../../public/imgs/_icons/saturn.svg'), auto;
+}
+
+.photo_card.typing .photo_layout {
+    cursor: url('../../../public/imgs/_icons/keyboard.svg'), auto;
+}
+
+.photo_card.sun-glitter .photo_layout {
+    cursor: url('../../../public/imgs/_icons/twinkle.svg'), auto;
+}
+
+.photo_card.beach .photo_layout {
+    cursor: url('../../../public/imgs/_icons/laptop.svg'), auto;
+}
+
+.text_layout {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.photo_card {
+  position: relative; // 이거 있어야 text_layout이 절대 위치 가능
+}
+
+.text_layout.astronaut{
+    right: -124%;
+    bottom: 70%;
+    transform: translate(-50%, -50%);
+}
+
+@import './_res-aboutme';

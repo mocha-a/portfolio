@@ -1,0 +1,170 @@
+@import './reset';
+@import './mixins';
+
+.width_1400{
+    @include width_1400;
+}
+
+.anji_logo{margin-bottom: 0;}
+h2{margin-bottom: 50px;}
+
+// 헤더
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 38px;
+    .anji_logo{
+        @include logo_style;
+        display: flex;
+    }
+}
+.background{
+    @include Glassmorphism1;
+}
+
+// 렌더링 ing...
+.intro{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .console_log{
+        @include logo_style;
+        .blue{color: #00AEE8;}
+        .plum{color: #CC66FF;}
+        .pink{color: #FF3399;}
+        .yellow{color: #FFAA00;}
+        .green{color: #00B253;}
+        .variable{margin-bottom: 80px;}
+    }
+
+    .scroll {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        animation: bounce 2s infinite;
+    }
+    
+    @keyframes bounce {
+        0%, 100% { transform: translate(-50%, 0); }
+        50% { transform: translate(-50%, 10px); }
+    }
+}
+
+.firstSolidLine{
+    width: 1400px;
+    margin: 53px auto 100px;
+}
+
+.secondSolidLine{
+    width: 1400px;
+    margin: 100px auto ;
+}
+
+// 버튼
+.button{
+    @include suite_black_20;
+    backdrop-filter: blur(8px);
+    background: $button;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 10px rgba(48, 41, 45, 0.15);
+    padding: 0.5rem 1rem;
+}
+
+//
+.tagbtn{
+    display: inline-block;
+    padding: 7px 11px;
+    border-radius: 85px;
+    margin-right: 10px;
+}
+
+// 탑버튼
+.top_btn{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 9;
+    transition: bottom 0.3s ease;
+}
+
+
+// 동그라미
+.dot{display: inline-block; border-radius: 20px;}
+
+// 마퀴
+.marquee {
+    @include width_1920;
+    width: 100vw;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    >p {
+        font-size: 200px;
+        color: transparent;
+        -webkit-text-stroke: 1px black;
+        display: inline-block;
+        padding-left: 10%;
+        animation: marquee 20s linear infinite;
+    }
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+// footer
+.footer{
+    @include width_1920;
+    width: 100vw;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $lavender;
+    div>p{margin-bottom: 5px;}
+    div>p:last-child{margin-bottom: 0px;}
+    .contact{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        >span:nth-of-type(1)::before{
+            content: '🚀';
+            @include footer_before;
+        }
+        >span:nth-of-type(2)::before{
+            content: '✉️';
+            @include footer_before;
+        }
+        >span:nth-of-type(3)::before{
+            content: '☎️';
+            @include footer_before;
+        }
+        span:hover{
+            position: relative;
+            display: inline-block;
+            transform: translateY(0px);
+            transition: transform 0.55s;
+        }
+    }
+    .footer_right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+    }
+}
+
+@import './res-style';

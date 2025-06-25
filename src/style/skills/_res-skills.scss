@@ -1,0 +1,83 @@
+@import '../mixins';
+
+@media (min-width:768px) and (max-width:1400px){
+    .skills_container{
+        width: 100%;
+        .skills{
+            width: 90%;
+            margin: 50px auto;
+            font-size: 32px;
+        }
+    }
+    .swiper-slide{
+        padding: 0;
+    }
+
+    .skillsItme_content{
+        width: 100%; 
+        h3{
+            @include suite_black_30;
+            font-weight: normal;
+            margin-bottom: 24px;
+        }
+        .skills_name{
+            @include suite_black_23;
+        }
+        .skills_description{
+            @include suite_black_14;
+        }
+    }
+    // 아이콘 박스
+    .iconBox{
+        width: 28px; height: 28px;
+        >p{
+            width: 14px; height: 14px;
+        }
+    }
+}
+
+@media (max-width:767px){
+    .skills_container{
+        width: 100%;
+        margin-bottom: 30px;
+        .skills{
+            width: 90%;
+            margin: 24px auto 16px;
+            font-size: 32px;
+        }
+    }
+    .swiper-wrapper{
+        margin: 0 8px;
+    }
+    
+    .swiper-slide{
+        width: 90% !important;
+        margin: 0 8px !important;
+        padding: 0;
+    }
+
+    .skillsItme_content{
+        width: 100%;
+        padding: 16px;
+        height: 835px;
+        h3{
+            @include suite_black_30;
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 24px;
+        }
+        .skills_name{
+            @include suite_black_20;
+        }
+        .skills_description{
+            @include suite_black_14;
+        }
+    }
+    // 아이콘 박스
+    .iconBox{
+        width: 28px; height: 28px;
+        >p{
+            width: 14px; height: 14px;
+        }
+    }
+}

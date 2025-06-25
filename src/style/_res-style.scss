@@ -1,0 +1,123 @@
+@import './mixins';
+
+@media (min-width:768px) and (max-width:1400px){
+    .header{
+        .anji_logo{
+            @include res_logo_style;
+            display: flex;
+        }
+    }
+    
+    .intro{
+        .console_log{
+            font-size: 30px;
+        }
+    }
+
+    .firstSolidLine{
+        width: 90%;
+        margin: 100px auto ;
+    }
+    
+    .secondSolidLine{
+        width: 90%;
+        margin: 100px auto ;
+    }
+
+    // 탑버튼
+    .top_btn{
+        .top-btn{
+            width: 60px;
+            height: 60px;
+            >img{ @include img_layout; }
+        }
+    }
+
+    .footer{
+        padding: 50px 38px;
+        div>p{ @include suite_black_16; }
+        .contact{
+            span{ @include suite_black_16; }
+        }
+        .footer_right{ @include suite_black_16; }
+
+    }
+}
+
+@media (max-width:767px){
+    .header{
+        .anji_logo{
+            @include res_logo_style;
+            font-size: 20px;
+            display: flex;
+            >div:nth-of-type(1){ width: 9.9%;  height: 20%; }
+            >div:nth-of-type(2){ width: 25%;  height: 10%; }
+            >div{
+                >img{
+                        @include img_layout;
+                    }
+            }
+        }
+    }
+    
+    .intro{
+        .console_log{
+            @include width_90;
+            font-size: 21px;
+        }
+    }
+
+    .firstSolidLine{
+        width: 90%;
+        margin: 40px auto ;
+    }
+    
+    .secondSolidLine{
+        width: 90%;
+        margin: 32px auto ;
+    }
+
+    .button{
+        @include suite_black_16;
+        backdrop-filter: blur(8px);
+        background: $button;
+        border-radius: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 4px 10px rgba(48, 41, 45, 0.15);
+        padding: 6px 10px;
+    }
+
+    // 탑버튼
+    .top_btn{
+        right: 15px;
+        bottom: 15px;
+        .top-btn{
+            width: 45px;
+            height: 45px;
+            >img{ @include img_layout; }
+        }
+    }
+
+    .marquee{
+        margin: 0;
+        >p{font-size: 100px;}
+    }
+
+    .footer{
+        display: block;
+        padding: 26px 18px;
+        div>p{ @include suite_black_14; }
+        .contact{
+            span{ @include suite_black_14; }
+            button{ font-size: 16px }
+        }
+        .footer_right{ 
+            @include suite_black_14; 
+            margin-top: 20px;
+            display: block;
+        }
+        .snackbar{
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+@import '../mixins';
+
+.skills_container{
+    margin-bottom: 100px;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url('../../../public/imgs/gradient_bg.png') no-repeat center center;
+    position: relative;
+    background-size: cover;
+    >p{
+        font-size: 26px;
+        line-height: 1
+    }
+    .skills{
+        width: 1400px;
+        margin: 50px auto;
+        @include code_font_style;
+        &::after{
+            content: '🔨';
+        }
+    }
+    .skills_item{
+        display: flex;
+        align-items: start;
+        gap: 6px;
+        margin-bottom: 30px
+    }
+
+}
+.swiper {
+    z-index: 0 !important;
+}
+.swiper-wrapper{
+    margin: 0 38px;
+}
+.swiper-slide{
+    padding: 40px 0;
+}
+.skillsItme_content{
+    @include Glassmorphism2;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    backdrop-filter: blur(8px);
+    width: 560px; height: 900px;
+    padding: 40px;
+
+    h3{
+        @include suite_black_40;
+        font-weight: normal;
+        margin-bottom: 40px;
+    }
+    .skills_name{
+        @include suite_black_26;
+    }
+    .skills_description{
+        @include suite_black_14;
+    }
+
+}
+
+// 아이콘 박스
+.iconBox{
+    width: 30px; height: 30px;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    border: 1px solid $white;
+    padding: 7px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    >p{
+        width: 16px; height: 16px;
+        >img{ @include img_layout; display: block; object-fit: contain;}
+    }
+}
+
+@import './res-skills';

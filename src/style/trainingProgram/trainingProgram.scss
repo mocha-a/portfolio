@@ -1,0 +1,42 @@
+@import '../mixins';
+
+.trainingProgram_container{
+    @include width_90;
+    
+    .trainingProgram{
+        @include code_font_style;
+        &::after{
+            content: '🖥️';
+        }
+    }
+    .tranining_flex{
+        display: flex;
+        gap: 20px;
+        margin-bottom: 30px;
+
+        .tranining_content{
+            >h3{ margin: 20px 0 30px; font-size: 26px; font-weight: 500; }
+            .tranining_period{
+                @include suite_black_20;
+            }
+            .tranining_institution{
+                @include suite_black_20;
+                margin: 10px 0 20px;
+            }
+            .tranining_detail{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: 10px;
+                color: $fontgray;
+            }
+        }
+    }
+
+    .tranining_line{
+        svg{ width: 100px; }
+        margin: 12px 0 0 0;
+    }
+}
+
+@import './res-trainingProgram';

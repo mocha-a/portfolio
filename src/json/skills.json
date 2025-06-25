@@ -1,0 +1,142 @@
+[
+    {
+        "category": "front-end",
+        "skills": [
+        {
+            "name": "HTML5",
+            "description": "웹 표준에 맞는 구조적이고\n접근성 높은 마크업을 작성할 수 있습니다.",
+            "icon": "/imgs/_icons/html.svg"
+        },
+        {
+            "name": "CSS",
+            "description": "디자인 의도에 맞게 스타일을 적용할 수 있습니다.",
+            "icon": "/imgs/_icons/css.svg"
+        },
+        {
+            "name": "SCSS",
+            "description": "CSS 기본 문법에 기반해, SCSS(Sass)를 활용한 구조적이고\n재사용 가능한 스타일링을 할 수 있습니다.",
+            "icon": "/imgs/_icons/sass.svg"
+        },
+        {
+            "name": "JavaScript",
+            "description": "이벤트 처리, DOM 조작, fetch 기반 API 호출 등\n사용자와의 상호작용 중심 JavaScript 로직 구현을 할 수 있습니다.",
+            "icon": "/imgs/_icons/javascript.svg"
+        },
+        {
+            "name": "React",
+            "description": "컴포넌트 기반 UI 설계에 익숙하며,\nReact의 상태 관리와 props를 활용해 유연한 화면 구성을 구현할 수 있습니다.",
+            "icon": "/imgs/_icons/react.svg"
+        },
+        {
+            "name": "Flutter",
+            "description": "반응형 UI를 Flutter로 구현하고,\npub.dev 패키지를 활용해 기능을 확장해봤습니다.",
+            "icon": "/imgs/_icons/flutter.svg"
+        },
+        {
+            "name": "Dart",
+            "description": "Dart 언어를 사용해 상태 관리, API 통신 등을 구현했습니다.",
+            "icon": "/imgs/_icons/dart.svg"
+        }
+        ]
+    },
+    {
+        "category": "back-end",
+        "skills": [
+        {
+            "name": "Node.js",
+            "description": "Node.js 기반으로 서버 구축과 데이터 연동을 경험했습니다.",
+            "icon": "/imgs/_icons/nodejs.svg"
+        },
+        {
+            "name": "Express",
+            "description": "Express로 백엔드 서버 구축하고\nReact와 MongoDB로 데이터 흐름을 구현했습니다.",
+            "icon": "/imgs/_icons/express.svg"
+        },
+        {
+            "name": "PHP",
+            "description": "PHP로 관리자 페이지를 만들어 CRUD와 API 연동 기능을 직접 구현하여\n서버-클라이언트 구조를 이해했습니다.",
+            "icon": "/imgs/_icons/php.svg"
+        },
+        {
+            "name": "MongoDB",
+            "description": "JSON 기반이라 유연하고 접근이 쉬워서 금방 익숙해져 쉽게 다룰 수 있었습니다.",
+            "icon": "/imgs/_icons/mongodb.svg"
+        },
+        {
+            "name": "MySQL",
+            "description": "MariaDB를 사용해 기본적인 쿼리 작성과 데이터 관리에 익숙합니다.",
+            "icon": "/imgs/_icons/mysql.svg"
+        },
+        {
+            "name": "XAMPP",
+            "description": "XAMPP를 사용해 로컬 서버 환경에서\n데이터베이스와 백엔드 개발을 진행했습니다.",
+            "icon": "/imgs/_icons/xampp.svg"
+        }
+        ]
+    },
+    {
+        "category": "deployment",
+        "skills": [
+        {
+            "name": "Git",
+            "description": "기능 브랜치 생성, 충돌 해결, PR 병합 등 협업 중심의 버전 관리 경험이 있습니다.",
+            "icon": "/imgs/_icons/git.svg"
+        },
+        {
+            "name": "GitHub",
+            "description": "팀원들과 함께 코드를 관리하고 소통하기 위해\n이슈(issue)와 Pull Request 기능을 사용해본 경험이 있습니다.",
+            "icon": "/imgs/_icons/github.svg"
+        }
+        ]
+    },
+    {
+        "category": "version control",
+        "skills": [
+        {
+            "name": "Vercel",
+            "description": "자동 배포뿐만 아니라 환경변수 설정과 원하는 커스텀 도메인 연결까지 직접 관리했습니다.",
+            "icon": "/imgs/_icons/vercel.svg"
+        },
+        {
+            "name": "DotHome",
+            "description": "FileZilla로 PHP 파일을 배포해본 경험이 있습니다.",
+            "icon": "/imgs/_icons/dothome.svg"
+        }
+        ]
+    },
+    {
+        "category": "library",
+        "skills": [
+        {
+            "name": "Axios",
+            "description": "RESTful API와 비동기 통신을 구현했습니다.",
+            "icon": "/imgs/_icons/axios.svg"
+        },
+        {
+            "name": "Zustand",
+            "description": "React 기반 프로젝트에서 전역 상태 관리를 구현하고 경험했습니다.",
+            "icon": "/imgs/_icons/zustand.svg"
+        },
+        {
+            "name": "GetX",
+            "description": "Flutter 앱에서 효율적인 상태 관리를 구현하고 경험했습니다.",
+            "icon": "/imgs/_icons/getx.svg"
+        }
+        ]
+    },
+    {
+        "category": "design",
+        "skills": [
+        {
+            "name": "Figma",
+            "description": "프로젝트 초기 단계에서, Figma를 활용해 와이어프레임과 UI 디자인을 설계했습니다.",
+            "icon": "/imgs/_icons/figma.svg"
+        },
+        {
+            "name": "Adobe Illustrator",
+            "description": "팬툴을 사용해 일러스트 지도를 그려본 경험이 있습니다.",
+            "icon": "/imgs/_icons/adobe-illustrator.svg"
+        }
+        ]
+    }
+]
