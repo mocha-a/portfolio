@@ -1,3 +1,5 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { useEffect, useState } from "react";
 import Dot from "../Dot"
 import SpeechBubble from "./SpeechBubble";
@@ -20,6 +22,14 @@ function PhotoCard({ className }) {
         return () => window.removeEventListener("resize", checkIsMobile);
     }, []);
     
+    useEffect(() => {
+    AOS.init({
+        duration: 600,
+        once: true,  // 한 번만 애니메이션 실행
+
+    });
+    }, []);
+
     const mobileClick = (index) => {
         if (isMobile) {
             setActiveIndex((prev) => (prev === index ? null : index));
@@ -33,6 +43,8 @@ function PhotoCard({ className }) {
             key={index}
             className={`photo_card ${item.className}`}
             onClick={() => mobileClick(index)}
+            data-aos="fade"
+            data-aos-delay={index * 100}
             >
             <div className="photo_layout">
                 <img className={item.className} src={item.src} alt={item.alt} />

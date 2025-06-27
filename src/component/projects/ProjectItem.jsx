@@ -51,7 +51,7 @@ function ProjectItem({ data }) {
         {data.map((item, index) => (
           <div
             key={index}
-            className="data_box"
+            className="data_box"          
             onClick={() => click(item)}
           >
             <p className="data_thumbnail">
@@ -62,11 +62,11 @@ function ProjectItem({ data }) {
               <p className="data_subtitle">{item.subtitle}</p>
               <SolidLine color={ '#ddd' }/>
               {(item.stack.frontEnd.length > 0 || item.stack.backEnd.length > 0) && (
-              <p className="data_stack">
+              <div className="data_stack">
                 {[...item.stack.frontEnd, ...item.stack.backEnd].map((tech, i) => (
                   <TagBtn key={i} tagbtn={tech} color={item.color} className='data_tagbtn' />
                 ))}
-              </p>
+              </div>
             )}
             </div>
           </div>

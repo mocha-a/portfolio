@@ -41,8 +41,16 @@
         gap: 26px;
     }
     .data_box{
+        cursor: pointer;
         .data_thumbnail{
-            >img{ @include img_layout }
+            overflow: hidden;
+            >img{ 
+                @include img_layout;
+                transition: transform 0.3s ease; 
+            }
+            & img:hover {
+                transform: scale(1.05);
+            }
         }
         .data_content{
             margin: 30px 0;

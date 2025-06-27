@@ -18,9 +18,9 @@ function Footer() {
       </div>
       <div className="footer_right">
         <div className="contact">
-          <span><ArrowTooltips title='Github' /></span>
-          <span><ArrowTooltips title='Email' content='anji64852563@gmail.com' onCopy={handleSnackbarOpen}/></span>
           <span><ArrowTooltips title='Phone' content='010-6485-2563' onCopy={handleSnackbarOpen} /></span>
+          <span><ArrowTooltips title='Email' content='anji64852563@gmail.com' onCopy={handleSnackbarOpen}/></span>
+          <span><ArrowTooltips title='Github' /></span>
         </div>
         <div>&copy;2025 AnJihyeon. All Rights Reserved.</div>
       </div>

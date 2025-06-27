@@ -8,15 +8,15 @@ function TrainingProgram() {
   return (
     <div className='trainingProgram_container'>
       <h2 className='trainingProgram'>TrainingProgram</h2>
-        { trainingPrograms.map(item =>
-        <div className='tranining_flex'>
+        { trainingPrograms.map((item, i) =>
+        <div className='tranining_flex' key={i}>
           <SolidLine className='tranining_line' width='100px'/>
             <div className='tranining_content'>
               <p className='tranining_period'>{item.period}</p>
               <p className='tranining_institution'>{item.institution}</p>
               <h3>{item.title}</h3>
-              { item.details.map(detail =>
-                <div className='tranining_detail'>
+              { item.details.map((detail, i2) =>
+                <div className='tranining_detail' key={i2}>
                   <Dot color='#F0BFD3' size='10px'/>
                   <p>{detail}</p>
                 </div>

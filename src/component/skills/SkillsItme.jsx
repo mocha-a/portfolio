@@ -46,7 +46,6 @@ function SkillsItme() {
         {
         <Swiper 
         className="mySwiper"
-        snapAlign="start"
         spaceBetween={32}
         slidesPerView='auto'
         centeredSlides={false}

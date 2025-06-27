@@ -9,7 +9,7 @@
     "period": "2025.06.10 - 2025.06.16",
     "team": 2,
     "links": {
-      "vercel": "https://heunjeok.vercel.app",
+      "url": "https://heunjeok.vercel.app",
       "github": "https://github.com/mocha-a/heunjeok"
     },
     "features": [
@@ -86,7 +86,7 @@
     "period": "2025.06.04 - 2025.06.10",
     "team": 1,
     "links": {
-      "vercel": "https://anji-moonly.vercel.app",
+      "url": "https://anji-moonly.vercel.app",
       "github": "https://github.com/mocha-a/moonly"
     },
     "features": [
@@ -158,7 +158,7 @@
     "period": "2025-05-14 ~ 2025-05-23 (10일)",
     "team": 2,
     "links": {
-      "vercel": "https://anji-melody.vercel.app",
+      "url": "https://anji-melody.vercel.app",
       "github": "https://github.com/mocha-a/melody.git"
     },
     "features": [
@@ -249,7 +249,7 @@
     "period": "2025.04.02 ~ 2025.04.23",
     "team": 5,
     "links": {
-      "vercel": "https://anji-jeju-trip.vercel.app/",
+      "url": "https://anji-jeju-trip.vercel.app/",
       "github": "https://github.com/mocha-a/Jeju-trip"
     },
     "features": [
@@ -343,7 +343,7 @@
     "period": "2025.01.23 ~ 2025.02.24",
     "team": 1,
     "links": {
-      "vercel": "https://jiflix.vercel.app",
+      "url": "https://jiflix.vercel.app",
       "github": "https://github.com/mocha-a/Jiflix"
     },
     "features": [
@@ -374,8 +374,8 @@
     "period": "2025.01.23 ~ 2025.02.24",
     "team": 4,
     "links": {
-      "vercel": "ㅇㄹㅇㄹㄹㅇ",
-      "github": ""
+      "url": "https://mocha-a.github.io/sangreen/",
+      "github": "https://github.com/mocha-a/sangreen"
     },
     "features": [
       "예약 시스템",

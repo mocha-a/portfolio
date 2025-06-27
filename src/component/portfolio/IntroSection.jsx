@@ -3,18 +3,29 @@ import ScrollArrowIcon from '../_icon/ScrollArrowIcon'
 
 const IntroSection = forwardRef(({ scrollRef }, ref) => {
     const handleScroll = () => {
-        scrollRef.current?.scrollIntoView({ behavior: 'smooth' });
+        const element = scrollRef.current;
+        const headerOffset = 85;
+        const elementPosition = element?.getBoundingClientRect().top || 0;
+        const offsetPosition = window.pageYOffset + elementPosition - headerOffset;
+    
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth',
+        });
     };
 
     return (
         <div className='intro' ref={ref}>
             <div className='console_log'>
-                <p className='variable'>
-                    <span className='blue'>const </span>
-                    <span className='plum'>dev </span>
-                    <span className='pink'>= </span>
-                    <span className='yellow'>"안지현"</span>;
-                </p>
+                <div className='rocket'>
+                    <p className='variable'>
+                        <span className='blue'>const </span>
+                        <span className='plum'>dev </span>
+                        <span className='pink'>= </span>
+                        <span className='yellow'>"안지현"</span>;
+                    </p>
+                    <p><img src="/imgs/rocket.gif" alt="로켓" /></p>
+                </div>
                 <p>console.
                     <span className='green'>log</span>(
                 </p>
@@ -29,6 +40,7 @@ const IntroSection = forwardRef(({ scrollRef }, ref) => {
                 <p>);</p>
             </div>
             <button onClick={handleScroll} className="scroll">
+                <p>scroll</p>
                 <ScrollArrowIcon />
             </button>
         </div>

@@ -3,9 +3,11 @@ import Header from './component/Header';
 import Home from './component/portfolio/Home';
 import Footer from './component/Footer';
 
+
 import './style/_style.scss';
 
 function App() {
+
   return (
     <Router>
       <Header/>
