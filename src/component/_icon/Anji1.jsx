@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Anji1({ className }) {
     return (

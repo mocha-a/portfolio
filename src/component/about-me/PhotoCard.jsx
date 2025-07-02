@@ -1,10 +1,11 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { useEffect, useState } from "react";
+import AOS from 'aos';
 import Dot from "../Dot"
 import SpeechBubble from "./SpeechBubble";
 
-function PhotoCard({ className }) {
+import 'aos/dist/aos.css';
+
+function PhotoCard() {
     const photoList = [
         { color: '#DC78A1', src: '/imgs/astronaut.jpg', alt: '우주인', className: 'astronaut', text: '새로운 것을 두려워하지 않고,\n시도하며 배우는 걸 즐깁니다.'},
         { color: '#53C3BD', src: '/imgs/beach.jpg', alt: '해변', className: 'beach', text: '공간에 상관없이, 내가 좋아하는 일에 깊이\n몰입할 줄 아는 사람입니다.'},

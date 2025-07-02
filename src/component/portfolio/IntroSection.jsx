@@ -24,7 +24,7 @@ const IntroSection = forwardRef(({ scrollRef }, ref) => {
                         <span className='pink'>= </span>
                         <span className='yellow'>"안지현"</span>;
                     </p>
-                    <p><img src="/imgs/rocket.gif" alt="로켓" /></p>
+                    <p className='rocket_container'><img src="/imgs/rocket.gif" alt="로켓" /></p>
                 </div>
                 <p>console.
                     <span className='green'>log</span>(

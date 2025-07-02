@@ -15,15 +15,15 @@ function Home() {
 
     return (
         <>
-        <IntroSection scrollRef={scrollRef} ref={introRef}/>
-        <div ref={scrollRef}><AboutMe/></div>
-        <SolidLine className='firstSolidLine' color='#D6D6E7'/>
-        <TrainingProgram />
-        <SolidLine className='secondSolidLine' color='#D6D6E7'/>
-        <Skills/>
-        <Marquee/>
-        <Projects/>
-        <TopButton introRef={introRef} />
+            <IntroSection scrollRef={scrollRef} ref={introRef}/>
+            <div ref={scrollRef}><AboutMe/></div>
+            <SolidLine className='firstSolidLine' color='#D6D6E7'/>
+            <TrainingProgram />
+            <SolidLine className='secondSolidLine' color='#D6D6E7'/>
+            <Skills/>
+            <Marquee/>
+            <Projects/>
+            <TopButton introRef={introRef} />
         </>
     )
 }

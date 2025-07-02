@@ -64,6 +64,14 @@
         .console_log{
             @include width_90;
             font-size: 21px;
+            .variable{
+                width: 90%;
+                margin-bottom: 30px;
+            }
+            .rocket_container{
+                width: 20%;
+                height: 20%;
+            }
         }
     }
 

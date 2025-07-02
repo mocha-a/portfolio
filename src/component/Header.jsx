@@ -15,12 +15,12 @@ function Header() {
     }, []);
     
     return (
-        <div className={`header ${background ? "background" : ""}`}>
+        <header className={`header ${background ? "background" : ""}`}>
             <h2 className='anji_logo'><Anji1/>anji<Anji2/></h2>
             <a href='https://github.com/mocha-a'>
                 <div className='button'>see on github</div>
             </a>
-        </div>
+        </header>
     )
 }
 
