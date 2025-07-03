@@ -1,5 +1,5 @@
-import TagBtn from './TagButton'
 import Dot from '../../Dot'
+import TagBtn from './TagButton'
 import SolidLine from '../../SolidLine'
 
 function PopupItem({ data, onClose }) {
@@ -19,9 +19,13 @@ function PopupItem({ data, onClose }) {
                     <h4>참여 인원</h4>
                     <p>{data.team}명</p>
                 </div>
-                <div>
+                <div className='popup_period'>
                     <h4>기간</h4>
-                    <p>{data.period}</p>
+                    {data.period.split('\n').map((line, idx) => (
+                    <p key={idx} className={idx === 0 ? 'mainPeriod' : 'subPeriod'}>
+                        {line}
+                    </p>
+                    ))}
                 </div>
                 <div>
                     <h4>관련 링크</h4>

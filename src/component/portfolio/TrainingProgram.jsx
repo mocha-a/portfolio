@@ -1,13 +1,14 @@
-import SolidLine from '../SolidLine'
 import Dot from '../Dot'
+import SolidLine from '../SolidLine'
 import trainingPrograms from '../../json/trainingPrograms.json';
 
+import 'aos/dist/aos.css';
 import '../../style/trainingProgram/trainingProgram.scss'
 
 function TrainingProgram() {
   return (
     <div className='trainingProgram_container'>
-      <h2 className='trainingProgram'>TrainingProgram</h2>
+      <h2 className='trainingProgram' data-aos="fade-up">TrainingProgram</h2>
         { trainingPrograms.map((item, i) =>
         <div className='tranining_flex' key={i}>
           <SolidLine className='tranining_line' width='100px'/>

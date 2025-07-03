@@ -1,13 +1,13 @@
+import { useState } from "react";
 import MySnackbar from "./Snackbar";
 import ArrowTooltips from "./Tooltip";
-import { useState } from "react";
 
 
 function Footer() {
-  const [snackbarOpen, setSnackbarOpen] = useState(false);
+  const [snackbarOpen, setSnackbarOpen] = useState(false); // 스낵바 열림 여부 상태
 
-  const handleSnackbarOpen = () => setSnackbarOpen(true);
-  const handleSnackbarClose = () => setSnackbarOpen(false);
+  const handleSnackbarOpen = () => setSnackbarOpen(true); // 복사 시 스낵바 열기
+  const handleSnackbarClose = () => setSnackbarOpen(false); // 스낵바 닫기
 
   return (
     <footer className="footer">
@@ -19,13 +19,13 @@ function Footer() {
       <div className="footer_right">
         <div className="contact">
           <span><ArrowTooltips title='Phone' content='010-6485-2563' onCopy={handleSnackbarOpen} /></span>
-          <span><ArrowTooltips title='Email' content='dev.mochaji@gmail.com' onCopy={handleSnackbarOpen}/></span>
+          <span><ArrowTooltips title='Email' content='anji64852563@gmail.com' onCopy={handleSnackbarOpen}/></span>
           <span><ArrowTooltips title='Github' /></span>
         </div>
         <div>&copy;2025 AnJihyeon. All Rights Reserved.</div>
       </div>
 
-      {/* 따로 만든 Snackbar 사용 */}
+      {/* 복사 완료 시 보여줄 Snackbar 알림 */}
       <MySnackbar open={snackbarOpen} onClose={handleSnackbarClose} />
     </footer>
   );

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import AOS from 'aos';
 import Dot from "../Dot"
 import SpeechBubble from "./SpeechBubble";
 
@@ -13,24 +12,18 @@ function PhotoCard() {
         { color: '#B0B0D8', src: '/imgs/sun-glitter.jpg', alt: '윤슬', className: 'sun-glitter', text: '저의 코드가 사용자에게 윤슬처럼\n잔잔히 반짝이는 경험을 선사하길 바랍니다.'},
     ];
 
-    const [activeIndex, setActiveIndex] = useState(null);
-    const [isMobile, setIsMobile] = useState(false);
+    const [activeIndex, setActiveIndex] = useState(null); // 현재 활성화된 말풍선 인덱스
+    const [isMobile, setIsMobile] = useState(false);  // 모바일 여부 판단 상태
 
     useEffect(() => {
+        // 모바일 여부 체크 함수
         const checkIsMobile = () => setIsMobile(window.innerWidth <= 480);
-        checkIsMobile();
-        window.addEventListener("resize", checkIsMobile);
-        return () => window.removeEventListener("resize", checkIsMobile);
+        checkIsMobile(); // 최초 실행
+        window.addEventListener("resize", checkIsMobile); // 리사이즈 시 다시 체크
+        return () => window.removeEventListener("resize", checkIsMobile); // 클린업
     }, []);
     
-    useEffect(() => {
-    AOS.init({
-        duration: 600,
-        once: true,  // 한 번만 애니메이션 실행
-
-    });
-    }, []);
-
+    // 모바일일 때 카드 클릭 시 말풍선 토글
     const mobileClick = (index) => {
         if (isMobile) {
             setActiveIndex((prev) => (prev === index ? null : index));

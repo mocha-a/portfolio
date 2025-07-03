@@ -1,16 +1,18 @@
-import { forwardRef } from 'react';
+import { forwardRef } from 'react'; // ref 전달을 위해 forwardRef 사용
 import ScrollArrowIcon from '../_icon/ScrollArrowIcon'
 
+// ref를 부모로부터 전달받기 위해 forwardRef 사용
 const IntroSection = forwardRef(({ scrollRef }, ref) => {
+    // 스크롤 버튼 클릭 시 AboutMe 위치로 부드럽게 이동
     const handleScroll = () => {
-        const element = scrollRef.current;
-        const headerOffset = 85;
-        const elementPosition = element?.getBoundingClientRect().top || 0;
+        const element = scrollRef.current; // 스크롤 대상 엘리먼트
+        const headerOffset = 85; // 헤더 높이 보정값
+        const elementPosition = element?.getBoundingClientRect().top || 0; // 대상 위치
         const offsetPosition = window.pageYOffset + elementPosition - headerOffset;
     
         window.scrollTo({
             top: offsetPosition,
-            behavior: 'smooth',
+            behavior: 'smooth', // 부드러운 스크롤
         });
     };
 

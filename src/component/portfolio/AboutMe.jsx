@@ -1,11 +1,12 @@
 import PhotoCard from '../about-me/PhotoCard'
 
+import 'aos/dist/aos.css';
 import '../../style/aboutme/aboutme.scss'
 
 function AboutMe() {
   return (
     <div className='aboutme_container'>
-      <h2 className='aboutme'>About Me</h2>
+      <h2 className='aboutme' data-aos="fade-up">About Me</h2>
       <div className='aboutme_content'>
         <PhotoCard/>
         <div className='text'>

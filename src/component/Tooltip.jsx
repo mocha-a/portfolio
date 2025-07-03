@@ -1,6 +1,6 @@
-import Button from '@mui/material/Button';
-import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+import Button from '@mui/material/Button';
 
 const CustomTooltip = styled(({ className, ...props }) => (
   <Tooltip {...props} arrow classes={{ popper: className }} />
@@ -39,9 +39,9 @@ export default function ArrowTooltips({ title, content, onCopy }) {
 
   const handleClick = () => {
     if (content) {
-      navigator.clipboard.writeText(content)
+      navigator.clipboard.writeText(content) // 클립보드 복사
         .then(() => {
-          onCopy?.(); // 복사 완료 시 부모에서 Snackbar 띄우게
+          onCopy?.(); // 복사 완료 시 부모에서 Snackbar 띄우게 전달
         });
     }
   };

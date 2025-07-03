@@ -4,9 +4,10 @@ import TagBtn from "./popup/TagButton";
 import SolidLine from "../SolidLine";
 
 function ProjectItem({ data }) {
-  const [item, setItem] = useState(null);
-  const popupRef = useRef(null);
+  const [item, setItem] = useState(null); // 현재 클릭된 프로젝트
+  const popupRef = useRef(null); // 팝업 영역 참조용 ref
 
+  // 카드 클릭 시 팝업 열고 닫기 토글
   function click(clickedItem) {
     if (item === clickedItem) {
       setItem(null);
@@ -41,7 +42,7 @@ function ProjectItem({ data }) {
     }
 
     return () => {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = "auto"; // cleanup: 항상 auto로 복구
     };
   }, [item]);
 

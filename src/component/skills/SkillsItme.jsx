@@ -4,6 +4,8 @@ import skills from '../../json/skills.json';
 import "swiper/css";
 
 function SkillsItme() {
+
+    // 배포 & 버전 관리 카테고리 병합 슬라이드
     const mergedDeploymentSlide = {
         category: "배포 & 버전 관리",
         skills: [
@@ -17,7 +19,8 @@ function SkillsItme() {
             }
             ]
         };
-        
+    
+    // 라이브러리 & 디자인 카테고리 병합 슬라이드
     const mergedLibraryDesignSlide = {
         category: "라이브러리 & 디자인",
         skills: [

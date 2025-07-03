@@ -34,7 +34,6 @@
             }
         }
     }
-
     .project_item{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -76,7 +75,6 @@
                 margin: 0 10px 10px 0;
             }
         }
-
     }
 }
 
@@ -90,7 +88,6 @@
     background: rgba(255, 255, 255, 0.9);
     border-radius: 20px;
     backdrop-filter: blur(25px);
-
     position: fixed;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
@@ -148,10 +145,27 @@
     .popup_info{
         display: flex;
         gap: 30px;
-        .popop_team{width: 14%;}
+        .popop_team{ width: 14%; }
         .data_link{
             border-bottom: 1px solid $black;
         }
+        .popup_period{
+            >p{ white-space: pre-line; }
+            .mainPeriod {
+                display: block;
+                font-size: 20px;
+            }
+
+            .subPeriod {
+                display: block;
+                font-size: 17px;
+                color: #666;
+                margin-top: 4px;
+            }
+        }
+    }
+    .popup_frontEnd{
+        .tagbtn{ margin-bottom: 10px; }
     }
     .popup_myRoles{
         h4{ font-size: 20px !important; }
@@ -193,12 +207,12 @@
     .popup_cause>p, .popup_solutions>p{ 
         @include suite_black_18; 
         margin-left: 18px;
+        white-space: pre-line;
     }
     .popup_issue::before{
         content: '🚧';
         padding-right: 5px
     }
-
     .popup_issue>div, .popup_cause>div, .popup_solutions>div{
         @include flex;
         gap: 8px;
