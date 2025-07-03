@@ -1,10 +1,10 @@
 # ![Image](https://github.com/user-attachments/assets/cb084bf7-230b-46d6-bea3-c778174296c0)
 
-기술 세계를 탐험하는 신입 프론트엔드 개발자의 첫 렌더링.<br>
-
-React 기반의 SPA로 제작한 이 포트폴리오는,<br>
-JSON 기반 데이터 구조를 활용해 각 프로젝트의 정보, 역할, 트러블슈팅을 구조화된 형식으로 정리하고,<br>
-사용자에게 일관성 있고 체계적인 방식으로 전달할 수 있도록 구성했습니다.
+> 기술 세계를 탐험하는 신입 프론트엔드 개발자의 첫 렌더링.<br>
+>
+> React 기반의 SPA로 제작한 이 포트폴리오는,<br>
+> JSON 기반 데이터 구조를 활용해 각 프로젝트의 정보, 역할, 트러블슈팅을 구조화된 형식으로 정리하고,<br>
+> 사용자에게 일관성 있고 체계적인 방식으로 전달할 수 있도록 구성했습니다.
 
 ## 🔗 배포 URL
 [anji-frontend-portfolio.vercel.app](https://anji-frontend-portfolio.vercel.app)
