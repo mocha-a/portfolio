@@ -7,7 +7,7 @@
 > 사용자에게 일관성 있고 체계적인 방식으로 전달할 수 있도록 구성했습니다.
 
 ## 🔗 배포 URL
-[anji-frontend-portfolio.vercel.app](https://anji-frontend-portfolio.vercel.app)
+[https://anji-frontend-portfolio.vercel.app](https://anji-frontend-portfolio.vercel.app)
 
 ## 📑 프로젝트 요약
 
