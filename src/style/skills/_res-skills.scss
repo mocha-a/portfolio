@@ -2,6 +2,7 @@
 
 @media (min-width:768px) and (max-width:1400px){
     .skills_container{
+        margin-top: 320px;
         width: 100%;
         .skills{
             width: 90%;
@@ -39,10 +40,10 @@
 @media (max-width:767px){
     .skills_container{
         width: 100%;
-        margin-bottom: 30px;
+        margin: 140px 0 30px;
         .skills{
             width: 90%;
-            margin: 24px auto 16px;
+            margin: 24px auto 50px;
             font-size: 32px;
         }
     }

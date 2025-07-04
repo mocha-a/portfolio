@@ -32,8 +32,8 @@ function PopupItem({ data, onClose }) {
                     <p>
                         {Object.entries(data.links).map(([key, value]) =>
                         value ? (
-                            <a key={key} href={value} style={{ display: 'inline-block' }} target="_blank" rel="noreferrer" className='data_link'>
-                            {value}
+                            <a key={key} href={value} target="_blank" rel="noreferrer" className='data_link'>
+                                <span>{value}</span>
                             </a>
                         ) : null
                         )}

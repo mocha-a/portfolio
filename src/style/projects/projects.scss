@@ -2,7 +2,7 @@
 
 .projects_container{
     @include width_1400;
-    margin: 450px auto 100px;
+    margin: 100px auto 100px;
 
     .projects_content{
         width: 90%;
@@ -147,7 +147,14 @@
         gap: 30px;
         .popop_team{ width: 14%; }
         .data_link{
-            border-bottom: 1px solid $black;
+            display: block;
+              span {
+                display: inline;
+                border-bottom: 1px solid $black;
+            }
+            &:nth-of-type(1){
+                margin-bottom: 12px;
+            }
         }
         .popup_period{
             >p{ white-space: pre-line; }

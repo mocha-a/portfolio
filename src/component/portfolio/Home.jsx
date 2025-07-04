@@ -27,9 +27,9 @@ function Home() {
             <SolidLine className='firstSolidLine' color='#D6D6E7'/>
             <TrainingProgram /> {/* 교육 과정 소개 섹션 */}
             <SolidLine className='secondSolidLine' color='#D6D6E7'/>
-            <Skills/> {/* 기술 스택 섹션 */}
-            <Marquee/> {/* 마퀴(흘러가는 키워드) 효과 */}
             <Projects/> {/* 프로젝트 소개 섹션 */}
+            <Marquee/> {/* 마퀴(흘러가는 키워드) 효과 */}
+            <Skills/> {/* 기술 스택 섹션 */}
             <TopButton introRef={introRef} /> {/* 상단으로 이동 버튼 */}
         </>
     )

@@ -88,7 +88,7 @@
     "color" : "#B6BB79",
     "icon": "/imgs/heunjeok-logo.svg",
     "thumbnail": "/imgs/heunjeok-thumbnail.png",
-    "description": "비회원도 자유롭게 사용 가능하며, 비밀번호 기반으로 리뷰를 안전하게 수정·삭제할 수 있습니다. Flutter와 PHP를 사용해 7일간 2인이 개발했으며,\n슬라이드형 UI, 별점 기능, 검색 등 간단하지만 직관적인 기능을 제공합니다.\n알라딘 Open API를 연동하여 추천 도서와 베스트셀러 정보를 제공하며,\n책에 대한 감상을 남기고 싶었던 사용자들을 위한 작고 소중한 기록 공간입니다.",
+    "description": "비회원도 자유롭게 사용 가능하며, 비밀번호 기반으로 리뷰를 안전하게 수정·삭제할 수 있습니다. Flutter와 PHP를 사용해 슬라이드형 UI, 별점 기능, 검색 등 간단하지만 직관적인 기능을 제공합니다.\n알라딘 Open API를 연동하여 추천 도서와 베스트셀러 정보를 제공하며,\n책에 대한 감상을 남기고 싶었던 사용자들을 위한 작고 소중한 기록 공간입니다.",
     "period": "2025.06.10 - 2025.06.16",
     "team": 2,
     "links": {
@@ -96,12 +96,13 @@
       "github": "https://github.com/mocha-a/heunjeok"
     },
     "features": [
-      "SPA 기반",
-      "모바일·태블릿 반응형 지원",
-      "자체 회원가입 및 로그인",
-      "카테고리·검색으로 상품 탐색",
-      "장바구니·위시리스트",
-      "주문 내역 확인"
+      "비회원 사용",
+      "비밀번호 기반 기록 관리",
+      "비밀번호 유효성 검사",
+      "책에 대한 감상(리뷰) 저장 및 관리 기능",
+      "책, 기록 리스트 및 상세 내용 검색 기능",
+      "별점 평가 기능",
+      "추천도서 · 베스트셀러를 슬라이드 형식의 UI로 직각적으로 제공"
     ],
     "stack": {
       "frontEnd": [
@@ -147,14 +148,6 @@
         "solutions": [
           "Row를 SingleChildScrollView(scrollDirection: Axis.horizontal)로 감싸 스크롤 가능하게 처리",
           "mainAxisSize를 MainAxisSize.min으로 설정하여 오버플로우 방지"
-        ]
-      },
-      {
-        "issue": "실제로는 리뷰가 1개 밖에 없는데 검색 결과가 비정상적으로 많이 나오는 이슈 발생",
-        "cause": "book 테이블에 book_id 중복 데이터 존재, JOIN 시 중복 곱해져 출력됨",
-        "solutions": [
-          "book 테이블에서 중복된 book_id 데이터 삭제 및 데이터 정리",
-          "[insert.php] 쿼리 수정: \n$checkBook = \"SELECT * FROM book WHERE id = '$book_id'\" \n→ $checkBook = \"SELECT * FROM book WHERE book_id = '$book_id'\""
         ]
       }
     ]
