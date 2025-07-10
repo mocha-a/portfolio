@@ -1,7 +1,7 @@
 @import '../mixins';
 
 .trainingProgram_container{
-    @include width_90;
+    @include width_1400;
     
     .trainingProgram{
         @include code_font_style;
