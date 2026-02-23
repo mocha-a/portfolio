@@ -50,7 +50,7 @@ function TopButton({ introRef }) {
     return (
     <div className='top_btn' style={{ bottom: bottomOffset }}>
         <div className='top-btn' onClick={upScroll}>
-        <img src='/imgs/_icons/topButton.svg'/>
+        <img src='/imgs/_icons/topButton.svg' alt=""/>
         </div>
     </div>
     )

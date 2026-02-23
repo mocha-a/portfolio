@@ -6,12 +6,22 @@
     width: 100vw;
     left: 50%;
     transform: translateX(-50%);
-    background: url('../../../public/imgs/gradient_bg.png') no-repeat center center;
-    // animation: backgroundRotate 9s linear infinite;
     position: relative;
-    background-size: cover;
+    overflow: hidden;
+
     mask-image: linear-gradient(180deg, #fff 90%, #fff0);
     -webkit-mask-image: linear-gradient(180deg, #fff 90%, #fff0);
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url('../../../public/imgs/gradient_bg.png') no-repeat center center;
+        background-size: cover;
+        animation: rotateBg 20s linear infinite;
+        z-index: -1;
+    }
+
     >p{
         font-size: 26px;
         line-height: 1
@@ -82,18 +92,13 @@
     }
 }
 
-// @keyframes backgroundRotate {
-//   0%   { transform: rotate(0) scale(1); }
-//   10%  { transform: rotate(36deg) scale(1.5); }
-//   20%  { transform: rotate(72deg) scale(1); }
-//   30%  { transform: rotate(108deg) scale(0.75); }
-//   40%  { transform: rotate(144deg) scale(1); }
-//   50%  { transform: rotate(180deg) scale(1.5); }
-//   60%  { transform: rotate(216deg) scale(1); }
-//   70%  { transform: rotate(252deg) scale(0.75); }
-//   80%  { transform: rotate(288deg) scale(1); }
-//   90%  { transform: rotate(324deg) scale(1.5); }
-//   100% { transform: rotate(360deg) scale(1); }
-// }
+@keyframes rotateBg {
+  from {
+    transform: rotate(0deg) scale(1.2);
+  }
+  to {
+    transform: rotate(360deg) scale(1.2);
+  }
+}
 
 @import './res-skills';
