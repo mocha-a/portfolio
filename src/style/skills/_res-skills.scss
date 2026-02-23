@@ -4,6 +4,9 @@
     .skills_container{
         margin-top: 320px;
         width: 100%;
+        &::before {
+            animation: none;
+        }
         .skills{
             width: 90%;
             margin: 50px auto;
@@ -41,6 +44,9 @@
     .skills_container{
         width: 100%;
         margin: 140px 0 30px;
+        &::before {
+            animation: none;
+        }
         .skills{
             width: 90%;
             margin: 24px auto 50px;
@@ -60,7 +66,7 @@
     .skillsItme_content{
         width: 100%;
         padding: 16px;
-        height: 835px;
+        min-height: 920px;
         h3{
             @include suite_black_30;
             font-size: 24px;
