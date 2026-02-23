@@ -210,7 +210,7 @@
         }
     }
 
-    .popup_issue{ @include suite_black_20; margin-bottom: 6px}
+    .popup_issue{ @include suite_black_20; margin-bottom: 6px; white-space: pre-line;}
     .popup_cause>p, .popup_solutions>p{ 
         @include suite_black_18; 
         margin-left: 18px;
@@ -218,7 +218,7 @@
     }
     .popup_issue::before{
         content: '🚧';
-        padding-right: 5px
+        padding-right: 5px;
     }
     .popup_issue>div, .popup_cause>div, .popup_solutions>div{
         @include flex;

@@ -23,9 +23,19 @@
             "icon": "/imgs/_icons/javascript.svg"
         },
         {
+            "name": "TypeScript",
+            "description": "TypeScript를 활용해 타입을 사전에 정의하고, \nany 사용을 지양하며 타입 에러를 꼼꼼히 해결해 나가고 있습니다.",
+            "icon": "/imgs/_icons/typescript.svg"
+        },
+        {
             "name": "React",
             "description": "컴포넌트 기반 UI 설계에 익숙하며,\nReact의 상태 관리와 props를 활용해 유연한 화면 구성을 구현할 수 있습니다.",
             "icon": "/imgs/_icons/react.svg"
+        },
+        {
+            "name": "Next.js",
+            "description": "Next.js를 활용해 서버 환경과 라우팅을 포함한 웹 애플리케이션을 구현 중이며, 다양한 렌더링 방식(CSR, SSR 등)을 학습하며 적용해 나가고 있습니다.",
+            "icon": "/imgs/_icons/nextjs.svg"
         },
         {
             "name": "Flutter",
