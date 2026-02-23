@@ -46,7 +46,11 @@
     background: rgba(255, 255, 255, 0.4);
     border-radius: 5px;
     backdrop-filter: blur(8px);
-    width: 560px; height: 1100px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    min-height: 1164px;
     padding: 40px;
 
     h3{
